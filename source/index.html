@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <!-- <link rel="preload" href="fonts/.woff" as="font">
+  <link rel="preload" href="fonts/.woff2" as="font"> -->
+  <style>
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  </style>
+</head>
 
-  </body>
+<body>
+  <header class="page-header header">
+    <nav class="header__nav nav nav--static" style="background-color: rgba(0, 128, 0, 0.6);">
+      <a class="header__logo logo" href="#">
+        <img src="https://via.placeholder.com/100x19" alt="" width="100" height="19" title="">
+      </a>
+      <button class="nav__toggle nav__toggle--open" aria-label="Открыть меню"></button>
+      <button class="nav__toggle nav__toggle--close" aria-label="Закрыть меню"></button>
+      <ul class="nav__menu-list menu-list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 0.9);">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#service">О сервисе</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="form.html">Направления</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="nav__user-list user-list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 0.9);">
+        <li class="user-list__item">
+          <a class="user-list__authorization-btn btn" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="nav__contact-list contact-list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 0.9);">
+        <li class="contact-list__item">
+          <a class="contact-list__link contact-list__link--phone" href="tel:88005558628" aria-label="Номер для связи с нами">8 800 555-86-28</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link contact-list__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Почта для связи с нами">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="nav__social-list social social--header" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 0.9);">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" target="_blank">
+            <span class="visually-hidden">Фейсбук</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+          <a class="social__link social__link--vk" href="#" target="_blank">
+            <span class="visually-hidden">Вконтакте</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+          <a class="social__link social__link--instagram" href="#" target="_blank">
+            <span class="visually-hidden">Инстаграм</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Погнали - Сервис для поиска попутчиков для путешествий</h1>
+
+    <section class="banner" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <h2 class="banner__slogan">В путешествие с крутыми попутчиками!</h2>
+      <p class="banner__blockquote" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">
+        <q class="banner__quote">Лучшее приложение, что я видел в жизни!</q>
+        <cite class="banner__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </p>
+      <ul class="banner__list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+        <li class="banner__item">Выберите направление</li>
+        <li class="banner__item">Изучите идеи путешественников</li>
+        <li class="banner__item">Находите тех, кто похож на вас</li>
+        <li class="banner__item">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+
+    <section class="service" id="service" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <div class="service__wrap" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <h2 class="service__title" style="background-color: rgba(189, 170, 4, 0.8); outline: 2px solid rgb(0, 100, 240);">О сервисе</h2>
+        <p class="service__desc" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <span class="service__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</span>
+        <a class="service__more-btn btn" href="#" aria-label="Подробнее о нашем сервисе">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="directions" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <h2 class="directions__title" style="background-color: rgba(189, 170, 4, 0.8); outline: 2px solid rgb(0, 100, 240);">Направления</h2>
+      <p class="directions__desc" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+      <div class="directions__list" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <article class="directions__item directions-card">
+          <div class="directions-card__pic" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <img src="https://via.placeholder.com/270x110" alt="" width="270" height="110" title="">
+            <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+          </div>
+          <div class="directions-card__info card-info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <h3 class="card-info__country">Таиланд</h3>
+            <b class="card-info__slogan">Джунгли зовут!</b>
+            <ul class="card-info__list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+              <li class="card-info__item">
+                <span class="card-info__views">18321</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="directions__item directions-card">
+          <div class="directions-card__pic" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <img src="https://via.placeholder.com/270x110" alt="" width="270" height="110" title="">
+            <ul class="directions-card__flag flag" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+              <li class="flag__item">
+                <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+              </li>
+            </ul>
+          </div>
+          <div class="directions-card__info card-info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <h3 class="card-info__country">Франция</h3>
+            <b class="card-info__slogan">Трэ бьен, манифик!</b>
+            <ul class="card-info__list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+              <li class="card-info__item">
+                <span class="card-info__views">12518</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="directions__item directions-card">
+          <div class="directions-card__pic" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <img src="https://via.placeholder.com/270x110" alt="" width="270" height="110" title="">
+            <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+          </div>
+          <div class="directions-card__info card-info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+            <h3 class="card-info__country">Чехия</h3>
+            <b class="card-info__slogan">Закоулки старой Европы</b>
+            <ul class="card-info__list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+              <li class="card-info__item">
+                <span class="card-info__views">5326</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <a class="directions__more-btn btn" href="#" aria-label="Показать все наши направления">Показать все</a>
+    </section>
+
+    <section class="companions" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <div class="companions__wrap" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <div class="companions__info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+          <h2 class="companions__title" style="background-color: rgba(189, 170, 4, 0.8); outline: 2px solid rgb(0, 100, 240);">Попутчики</h2>
+          <p class="companions__desc" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <span class="companions__text">Теперь можно легко найти единомышленников!</span>
+        </div>
+        <div class="companions__list" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+          <article class="companions__item">
+            <div class="companions__level level-icon" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              <!-- svg -->
+              <span class="level-icon__info">90 level</span>
+            </div>
+            <div class="companions__pic" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              <img src="https://via.placeholder.com/270x110" alt="" width="270" height="270" title="">
+              <ul class="companions__flag flag" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+                <li class="flag__item">
+                  <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+                  <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+                  <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+                </li>
+              </ul>
+            </div>
+            <div class="companions__info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              <h3 class="companions__name">Таня Фирсова</h3>
+              <div class="companions__hashtags hashtags" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+                <a class="hashtags__link" href="#">#ЗОЖ</a>
+                <a class="hashtags__link" href="#">#ПП</a>
+                <a class="hashtags__link" href="#">#Фитнес</a>
+                <a class="hashtags__link" href="#">#пляж</a>
+                <a class="hashtags__link" href="#">#авокадо</a>
+                <a class="hashtags__link" href="#">#смузи</a>
+              </div>
+              <ul class="companions__transport transport" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+                <li class="transport__item transport__item--plane">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--bus">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--bicycle">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--person">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+              </ul>
+            </div>
+          </article>
+          <!-- <article class="companions__item">
+            <div class="companions__level level-icon" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              svg
+              <span class="level-icon__info">80 level</span>
+            </div>
+            <div class="companions__pic" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              <img src="https://via.placeholder.com/270x110" alt="" width="270" height="270" title="">
+              <ul class="companions__flag flag" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+                <li class="flag__item">
+                  <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+                  <img src="https://via.placeholder.com/35x24" alt="" width="35" height="24" title="">
+                </li>
+              </ul>
+            </div>
+            <div class="companions__info" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+              <h3 class="companions__name companions__name--active">Петя Демин</h3>
+              <div class="companions__hashtags hashtags" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+                <a class="hashtags__link" href="#">#бургер</a>
+                <a class="hashtags__link" href="#">#бар</a>
+                <a class="hashtags__link" href="#">#футбол</a>
+                <a class="hashtags__link" href="#">#концерт</a>
+                <a class="hashtags__link" href="#">#крафт</a>
+              </div>
+              <ul class="companions__transport transport" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+                <li class="transport__item transport__item--plane">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--bus">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--bicycle">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+                <li class="transport__item transport__item--person">
+                  <img src="https://via.placeholder.com/20x20" alt="" width="20" height="20" title="">
+                </li>
+              </ul>
+            </div>
+          </article> -->
+        </div>
+        <a class="companions__more-btn btn" href="#" aria-label="Показать всех попутчиков">Показать всех</a>
+      </div>
+    </section>
+
+    <section class="add-profile" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <h2 class="add-profile" style="background-color: rgba(189, 170, 4, 0.8); outline: 2px solid rgb(0, 100, 240);">Добавьте свой профиль</h2>
+      <table class="add-profile__list" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(255, 0, 0);">
+        <tr class="add-profile__item">
+          <td class="add-profile__category">Базовое размещение</td>
+          <td class="add-profile__price">Бесплатно</td>
+        </tr">
+        <tr class="add-profile__item">
+          <td class="add-profile__category">Вывод на первых позициях</td>
+          <td class="add-profile__price">99 руб./мес</td>
+        </tr>
+        <tr class="add-profile__item">
+          <td class="add-profile__category">Кастомный цвет карточки</td>
+          <td class="add-profile__price">59 руб./мес</td>
+        </tr>
+      </table>
+      <a class="add-profile__more-btn btn" href="#">Показать тарифы для бизнеса</a>
+    </section>
+
+    <section class="feedback" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <h2 class="feedback__title" style="background-color: rgba(189, 170, 4, 0.8); outline: 2px solid rgb(0, 100, 240);">Заинтересовались?</h2>
+      <p class="feedback__info" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="feedback__login-link" href="#">авторизуйтесь</a>.</p>
+      <form class="feedback__signup-form signup-form" action="" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(12, 240, 0);">
+        <input class="signup-form__input" type="email" name="email" placeholder="E-mail">
+        <button class="signup-form__btn btn" type="submit">Регистрация</button>
+      </form>
+      <div class="feedback__help help" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <p class="help" style="background-color: rgba(255, 255, 255, 0.8); outline: 2px solid rgb(252, 255, 55);">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="help__list contact-list" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--phone" href="tel:88005558628" aria-label="Номер для связи с нами">8 800 555-86-28</a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Почта для связи с нами">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map" style="background-color: rgba(7, 45, 121, 1); outline: 4px solid rgba(0, 0, 0, 0.9);">
+      <h2 class="visually-hidden">Адрес нашего местоположения</h2>
+      <address class="map__address">ул. Большая Конюшенная, 19/8</address>
+      <a class="map__route-btn btn" href="#" aria-label="Проложить маршрут к нашему офису">Проложить маршрут</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+      <div class="footer__logo" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <img src="https://via.placeholder.com/96x15" alt="" width="96" height="15" title="">
+      </div>
+      <ul class="footer__social social social--footer" style="background-color: rgba(157, 45, 1, 0.8); outline: 2px solid rgba(0, 0, 0, 1);">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" target="_blank">
+            <span class="visually-hidden">Фейсбук</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+          <a class="social__link social__link--vk" href="#" target="_blank">
+            <span class="visually-hidden">Вконтакте</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+          <a class="social__link social__link--instagram" href="#" target="_blank">
+            <span class="visually-hidden">Инстаграм</span>
+            <!-- <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg> -->
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright" style="background-color: rgba(255, 100, 100, 0.9); outline: 2px solid rgb(110, 30, 200);">
+        <b class="copyright__developer">Разработано</b>
+        <a class="copyright__link" href="#" target="_blank">
+          <img src="https://via.placeholder.com/27x34" alt="" width="27" height="34" title="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
