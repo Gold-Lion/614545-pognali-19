@@ -1,0 +1,31 @@
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_normal, 'bloggersans');
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_normal, 'bloggersans-italic', italic);
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_light, 'bloggersans-light');
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_light, 'bloggersans-lightitalic', italic);
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_medium, 'bloggersans-medium');
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_medium, 'bloggersans-mediumitalick', italic);
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_bold, 'bloggersans-bold');
+}
+
+@font-face {
+  @include font-face-mixin($font_family_main, $font_weight_bold, 'bloggersans-bolditalic', italic);
+}

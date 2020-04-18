@@ -1,0 +1,118 @@
+// Шрифты
+$font_family_main: 'BloggerSans';
+$font_family_secondary: 'Arial';
+$font_size_: 300;
+$font_weight_light: 300;
+$font_weight_normal: 400;
+$font_weight_medium: 500;
+$font_weight_bold: 700;
+// $line_height: ;
+// $letter_spacing: ;
+
+// Разрешения
+$mobile_width: 320px;
+$tablet_width: 768px;
+$desktop_width: 1150px;
+$mobile_width_only: 767px;
+$retina_dpi: 144dpi;
+$retina_dppx: 1.5dppx;
+
+// Цвета
+$color_white: #ffffff;
+$color_black: #000000;
+// Оттенки красного
+$color_red_light: #f02323; // $tomato
+$color_red: #ff0000; // red
+// Оттенки розового
+$color_pink_lightest: #ffefef;
+$color_pink_lighter: #f9eaea;
+$color_pink_light: #f9d8d8; // light-tan
+$color_pink: #ffc0cb;
+$color_pink_dark: #f47e7e;
+// Оттенки желтого
+$color_yellow: #ffd74b; // gold
+$color_yellow_dark: #ffbd30; // mango_two
+$color_yellow_darker: #ffa530; // mango_three
+$color_yellow_darkest: #ff8d30; // mango
+// Оттенки синего
+$color_blue_lighter: #cbced9; // $cloudy_blue
+$color_blue_light: #132576; // $light-navy
+$color_blue: #1d2e5b; // $color_dark_slate_blue
+$color_blue_dark: #192144; // dark-blue-grey
+$color_blue_darker: #101d41; // color_dark_blue_grey_three
+$color_blue_darkest: #121936; // dark-blue-grey-two
+$color_blue_darkest_two: #161c35; // dark-two
+// Оттенки серого
+$color_grey: #808080;
+$color_grey_dark: #444444;
+$color_pale_grey_lightest: #f3f4f8;
+$color_pale_grey_lighter: #e2e5f2;
+$color_pale_grey_light: #e2e5f1;
+$color_pale_grey: #edeff6;
+$color_pale_grey_dark: #d4d9eb;
+$color_pale_grey_darker: #d6daed;
+$color_pale_grey_darkest: #c8cee8;
+
+// Цвета главных элементов
+$body_bg: $color_pale_grey;
+$header_bg: $color_blue_darkest_two;
+$footer_bg: $color_white;
+$paragraph_main_color: $color_grey;
+$paragraph_secondary_color: $color_white;
+
+$section_main_bg: $color_blue_dark;
+$section_secondary_bg: $color_yellow;
+
+$border_main_color: $color_blue_lighter;
+$border_secondary_color: $color_pale_grey_dark;
+$border_rare_color: $color_blue_dark;
+
+$error_border: $color_pink_dark;
+$error_bg: $color_pink_lightest;
+$error_color: $color_red;
+
+$btn_main_bg: $color_yellow;
+$btn_secondary_bg: $color_white;
+$btn_main_color: $color_blue;
+$btn_secondary_color: $color_blue_darkest_two;
+
+$title_main_color: $color_white;
+$title_secondary_color: $color_yellow_darkest;
+
+$filter_main_bg: $color_yellow;
+$filter_title_color: $color_blue;
+$filter_color: $color_blue;
+
+$card_main_color: $color_blue;
+
+$pagination_main_bg: $color_white;
+$pagination_main_color: $color_blue_darkest_two;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $color_red_light: #f02323; // $tomato
+// $color_red: #ff0000; // red
+// $color_pink_light: #f9d8d8; // light-tan
+// $color_yellow: #ffd74b; // gold
+// $color_yellow_dark: #ffbd30; // mango_two
+// $color_yellow_darker: #ffa530; // mango_three
+// $color_yellow_darkest: #ff8d30; // mango
+// $color_blue_lighter: #cbced9; // $cloudy_blue
+// $color_blue_light: #132576; // $light-navy
+// $color_blue: #1d2e5b; // $color_dark_slate_blue
+// $color_blue_dark: #192144; // dark-blue-grey
+// $color_blue_darker: #101d41; // color_dark_blue_grey_three
+// $color_blue_darkest: #121936; // dark-blue-grey-two
+// $color_blue_darkest_two: #161c35; // dark-two
