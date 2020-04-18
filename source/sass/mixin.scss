@@ -1,0 +1,21 @@
+@mixin font-face-mixin($name: $font_family_secondary, $weight: 400, $url_name: arial, $style: normal, $display: swap) {
+  font-family: $name;
+  font-weight: $weight;
+  font-style: $style;
+  font-display: $display;
+  src: url("../fonts/"+$url_name+".woff2") format("woff2"),
+    url("../fonts/"+$url_name+".woff") format("woff");
+}
+
+@mixin font($name: $font_family_secondary, $size: 16px, $weight: 400, $style: normal) {
+  font-family: $name, Helvetica, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
